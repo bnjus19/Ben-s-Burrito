@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben's Burrito</title>
+    <link href="/src/index.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="bg-slate-300 container mx-auto w-fill start-0 border-4 rounded-xl
+     md:mt-4">
+        <div class="flex flex-wrap items-center justify-between p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Ben's Burrito</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                    aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+                    <li>
+                        <a href="#about"
+                           class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <a href="#menu"
+                           class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#pickup"
+                           class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pickup</a>
+                    </li>
+                    <li>
+                        <a href="#delivery"
+                           class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Delivery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<h1 class="text-3xl font-bold underline">
+    Welcome to Ben's Burrito Website!
+</h1>
+<section id="about" class="flex container mx-auto bg-slate-300 mt-8 p-8">
+    <div class="container mx-auto flex md:flex-row flex-col gap-16">
+        <div class="relative">
+        <img src="Benjamin.JPEG" alt="Ben Njus" class="w-full h-auto object-cover" />
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white text-center">
+            <p class="text-sm font-semibold">Ben Njus</p>
+        </div>
+    </div>
+    </div>
+    <div id="map" class="h-64 w-full rounded-lg shadow-lg">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6532.017844495682!2d-106.62875749466025!3d35.05651603042994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1772214554045!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="text-center">Ben's Burrrito is conveniently located at the corner of Gerald Ave and Mesa Ave.</p>
+    </div>
+    <div class="flex-wrap mr-4 ml-4 py-3 float-center"> Ben's burrito was started in 2026 by Ben Njus on a mission to make the freshest
+        breakfast burritos in town. The tortillas are made from scratch, the eggs layed by cage free grown chickens, and
+        lettuce and tomatoes grown hydroponically with filtered water and no pesticides. We use fresh cut Russert potatoes and fresh
+        roasted green chile in our burritos.
+        <img src="chicken_coop.jpeg" alt="A chicken coop" class="w-125 h-75" />
+    </div>
+</section>
+<section id="menu" class="flex container justify-between items-center mx-auto bg-slate-300 mt-8 p-8">
+    <div><img class="mr-4 mb-4 h-48 w-48 rounded-full" src="Benjamin.JPEG" alt="background picture">
+        <div class="text-center p-4 border">The classic Breakfast burrito eggs cheese potatoes green chili</div>
+    </div>
+    <div>
+        <img class="mr-4 mb-4 h-48 w-48 rounded-full" src="Benjamin.JPEG" alt="background picture">
+        <div class="text-center p-4 border">chicken burrito chicken lettuce tomatoes green chili cheese</div>
+    </div>
+    <div>
+        <img class="mr-4 mb-4 h-48 w-48 rounded-full" src="Benjamin.JPEG" alt="background picture">
+        <div class="text-center p-4 border">steak burrito tender sirloin lettuce tomatoes cheese green chili</div>
+    </div>
+    <div>
+        <img class="mr-4 mb-4 h-48 w-48 rounded-full" src="Benjamin.JPEG" alt="background picture">
+        <div class="text-center p-4 border">steak breakfast burrito tender sirloin cheese eggs potatoes green chili</div>
+    </div>
+</section>
+<section id="pickup" class="md:container mx-4 md:mx-auto bg-slate-300 my-8 p-8 rounded-xl">
+    <div class="text-2xl font-bold">Start an order for pickup and pay on Shopify!</div>
+    <p class="text-2xl">
+        <a href="https://www.shopify.com/">Visit https://www.shopify.com/</a>
+    </p>
+</section>
+<section id="delivery" class="md:container mx-4 md:mx-auto bg-slate-300 my-8 p-8 rounded-xl">
+    <div class="text-2xl font-bold">Start an order for delivery and pay on Uber Eats!</div>
+    <p class="text-2xl">
+        <a href="https://www.ubereats.com/"> click on https://www.ubereats.com/</a>
+    </p>
+</section>
+<script type="module" src="/src/main.js"></script>
+<script src="https://maps.googleapis.com" async></script>
+</body>
+</html>
